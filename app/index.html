@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Burgers</title>
+</head>
+<body>
+    <div class="main">
+        <div class="header">
+            <div class="header__logo">Burgers<span>.co</span></div>
+            <div class="header__menu">
+                <a href="#" class="home">Home</a>
+                <a href="#">Our burgers</a>
+                <a href="#">what else?</a>
+                <a href="#">photos</a>
+                <a href="#">contact</a>
+            </div>
+        </div>
+        <div class="slogan">
+            <div class="slogan__container container-left">
+                <h2>We create Burgers.</h2>
+                <p>Beautiful hand crafted burgers with tangy sauce
+                    lettuce, onions, pickles and our specials.</p>
+            </div>
+            <div class="slogan__container container-right">
+                <h2 class='title'>Delicious.</h2>
+                <p class='item'>Oh yes, they are as they are
+                     made with hands and our chef loves them to the core.</p>
+                     <p class='item-2'>Are they really?<button class='slogan__button'>show me <img class="container-right__img" src="img/burger-icon.svg" alt=""></button></p>
+            </div>
+        </div>
+
+        <div id="food"></div>
+
+        <div class="menu">
+            <div class="menu__container-left">
+                <h2>Wait ! But we
+                        also serve...</h2>
+            </div>
+            <div class="menu__container-right">
+                <p>French Fries<span>$12</span></p> 
+                <p>Cold Drinks <span>$8</span></p>
+                <p>Love Choclates<span>$25</span></p>  
+                <p>Coleslaw <span>$9</span></p>  
+                <p>Lots of love<span>Free</span></p>                              
+            </div>
+        </div>
+        <div class="photos">
+            <h3>Photos</h3>
+            <p>Beautiful pictues clicked by our Customers</p>
+            <div class="photos__img">
+                <img src="img/food.jpg" alt="">
+            </div>
+            <h3>contact us</h3>
+            <p>Beautiful pictues clicked by our Customers</p>
+        </div>
+        <div class="footer">
+            <div class="footer__area">
+                <div class="footer__wrapper wrapper">
+                    <div class="wrapper__form">
+                        <p>Fill this form to get in touch with us.</p>
+                        <form action="#">
+                        <p><input type="text" size="32" value="Write your full name here"></p>
+                        <p><input type="email" size="32" value="Email Address here"></p>    
+                        <p><input type="tel" size="32" value="Phone Number"></p>      
+                        <p><textarea name="text" id="text" placeholder="Message you want to deliver....."></textarea></p>      
+                        <p><button>Submit Now</button></p>      
+                        </form>
+                    </div>
+                    <div class="wrapper__map">
+                        <img src="img/map.png" alt="">
+                        <p>272 Collin Street, Melbourne 3000</p>
+                        <p>Call  | <span>09005896</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__line">
+                <p>All RIghts Reserved - 2016 DesignCoon</p>
+                <p>www.sellfy.com/designcoon</p>
+            </div>
+        </div>
+    </div>
+     
+    <script id="burgersMenu" type="text/x-handlebars-template">
+        {{#each burgers}}
+        <div class="burger">
+            <div class="burger-column">
+                <div class="burger__img">
+                    <img src="{{photo}}" alt="burger">
+                </div>
+                <h2>{{name}}</h2>
+                <p>{{recipe}}</p>
+                <div class="info-string">
+                    <p><img src="{{icon}}" alt="barbecue"><span class="caloricity">{{caloricity}}</span>
+                    <span class="price">{{price}}</span></p>
+                </div>
+            </div>
+        </div>
+        {{/each}}
+    </script>
+
+
+
+    <script src="js/handlebars-v4.0.11.js"></script>
+    <script src="js/template.js"></script>
+</body>
+</html>

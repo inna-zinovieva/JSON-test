@@ -1,0 +1,30 @@
+{
+    "burgers": [
+      {
+        "name" :"Beef Bondy",
+        "icon" : "img/barbecue.png",
+        "recipe" : "Juicy hand cut beef with Mango sauce fries.",
+        "photo" : "img/burger-1.png",
+        "caloricity" : "345 KJ",
+        "price" : "$12.5"
+      },
+      {
+        "name" :"Chicken Mota",
+        "icon" : "img/barbecue.png",
+        "recipe" : "Beautiful chicken breast with salsa sauce on top",
+        "photo" : "img/burger-2.png",
+        "caloricity" : "345 KJ",
+        "price" : "$9.0"
+        
+      },
+      {
+        "name" :"Double Beef",
+        "icon" : "img/barbecue.png",
+        "recipe" : "Yes! Double patty with seculent sauce",
+        "photo" : "img/burger-3.png",
+        "caloricity" : "545 KJ",
+        "price" : "$13.7"
+        
+      }
+    ]
+  }
